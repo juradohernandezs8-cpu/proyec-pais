@@ -1,0 +1,12 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+class Config:
+    # Configuración de Supabase
+    SUPABASE_URL = os.getenv('SUPABASE_URL', 'https://kxppyurpnrymhqmypnrx.supabase.co')
+    SUPABASE_KEY = os.getenv('SUPABASE_KEY', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt4cHB5dXJwbnJ5bWhxbXlwbnJ4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYzNTMxMTcsImV4cCI6MjA3MTkyOTExN30.tj4qAjovxuZC1mPmgvJwC7Jp1qLRQoamWENMNUU8s8g')
+
+    # Flask
+    SECRET_KEY = os.getenv('SECRET_KEY', '1234567890')
